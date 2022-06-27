@@ -18,7 +18,17 @@ def words(n):
         return words(n//1000) + " Thousand " + (words(n % 1000))
     else:
         return words(n//1000) + " Thousand" 
-    
-   
 
 print(words(980))
+
+def cordinal(n):
+   special = ['1st', '2nd', '3rd', '4th', '5th', '6th', '7th', '8th', '9th', '10th', '11th', '12th', '13th', '14th']
+   if n== 1:
+          
+   if n >=4 and n <= 20:
+      return str(n) + 'th'
+
+   
+   elif n[-1] == 1:
+      return str(n) + "th"
+   
