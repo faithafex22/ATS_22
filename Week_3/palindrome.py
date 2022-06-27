@@ -1,4 +1,3 @@
-
 num = int(input("Enter number: "))
 rev = 0
 y = num
@@ -10,3 +9,7 @@ if(y==rev):
     print('The number is a palindrome')
 else:
     print('The number is not a palindrome')
+
+
+
+
