@@ -1,4 +1,4 @@
-#5.3
+5.3
 num = []
 for i in range(20):
     x = int(input("Enter your number here: "))
@@ -43,26 +43,21 @@ for ele in randomlist:
 print(mydict)
 
 #5.5
-Primes = [0] * 500001
-def SieveOfEratosthenes(n) :
-    Primes[0] = 1
-    i = 3
-    while(i*i <= n) :
-        if (Primes[i // 2] == 0) :
-            for j in range(3 * i, n+1, 2 * i) :
-                Primes[j // 2] = 1
-                 
-        i += 2
-        
-if __name__ == "__main__":
- 
-    n = 1000
-    SieveOfEratosthenes(n)
-    for i in range(1, n+1) :
-        if (i == 2) :
-            print( i, end = " ")
-        elif (i % 2 == 1 and Primes[i // 2] == 0) :
-            print( i, end = " ")
+y = []
+for num in range(2, 1000):
+    for i in range(2, num):
+        if num%i == 0:
+            num = 0
+            y.append(num)
+            break
+    else:
+        num = 1
+        y.append(num)
+print(y, end=" ")
+
+for index, num in enumerate(y, start=2):
+    if num == 1:
+        print(index, end=" ")
 
 
 #5.6 
