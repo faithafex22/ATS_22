@@ -1,10 +1,11 @@
-def prime(num):
-    a=[]
-    for i in range (1, num+1):
-        if num%i == 0:
-            a.append(i)
-    if len(a)==2:
-        return num
+num = 1000
+a=[]
+for i in range (1, num+1):
+    if num%i == 0:
+        a.append(i)
+if len(a)==2:
+    print (i, end=" ")
+i = i + 1    
         #print('This is a prime number')
     #else:
         #print('This is not a prime number')
