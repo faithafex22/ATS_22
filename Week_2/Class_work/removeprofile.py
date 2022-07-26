@@ -16,3 +16,14 @@ def removeprofile(dict):
     
 removeprofile({"f_name":"Yusuf", "l_name":"Oyedele", "day_month": "13th of March", "attendance":80, "height":10, "weight":60, "age": 27})
 print(people)
+for i in people:
+    print(i["age"])
+
+for i in range(len(people)):
+           firstname  = people[i]['f_name']
+           print(firstname)
+sum = 0
+for i in range(len(people)):
+    sum = sum + people[i]["age"]
+    print(sum)
+    

@@ -1,6 +1,3 @@
-from re import X
-
-
 people =   [{"f_name":"Faith", "l_name":"Adeosun", "day_month": "1st of Jan", "attendance": 90, "height": 6, "weight": 60, "age": 25},
             {"f_name":"Toluwanimi", "l_name":"Ogunbiyi", "day_month": "2nd of May", "attendance": 50, "height": 7, "weight": 50, "age": 25},
             {"f_name":"Lukman", "l_name":"Abisoye", "day_month": "3rd of Oct", "attendance": 50, "height": 8, "weight": 60, "age": 24},
