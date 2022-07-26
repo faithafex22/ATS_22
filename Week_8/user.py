@@ -62,4 +62,3 @@ print(user1.get_password())
 #user1.othername = "AFTL"
 #print(user.othername)
 #print(user1.othername)
-

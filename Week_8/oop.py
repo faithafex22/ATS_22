@@ -147,14 +147,3 @@ print(student1.min_age())
 print(student1.max_age())
 print(student1.average())
 print(student1.birth_year())
-      
-
-
-
- 
-
-
-
-        
-
-
