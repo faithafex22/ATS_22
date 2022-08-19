@@ -12,5 +12,5 @@ else:
 
     import math 
 n = input("Enter a number: ") 
-print("The factorial of ", n, " is : ") 
-print(math.factorial(int(n)))
+factorial = math.factorial(int(n))
+print(f"The factorial of {n} is: {factorial}") 

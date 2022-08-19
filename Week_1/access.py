@@ -1,6 +1,3 @@
-from stat import FILE_ATTRIBUTE_HIDDEN
-
-
 username = input("Enter your username: ")
 password = input("Enter your password: ")
 
