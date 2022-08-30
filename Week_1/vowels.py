@@ -19,6 +19,3 @@ def encode (data:str):
             enc.append("^" + rev_alpha_lower[digits.index(s)])
     print("".join(enc))
 encode(input("Enter a word: "))
-
-
-def decode(data:str)

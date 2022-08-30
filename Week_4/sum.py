@@ -3,7 +3,7 @@
 
 def add(n):
     sum = 0
-    for i in range (0, n+1):
+    for i in range (0, n):
         i = i + 1
         sum = sum + i
         if i != n:

@@ -3,7 +3,8 @@
 #Write a function that converts a string to lowercase and returns the result.
 #Write a function that converts a string to titlecase and returns the result.
 #Write a function that converts the first letter of each word in a sentence to uppercas
-#Write a function that checks if a string contains both alphabets and numbers.
+#Write a function that checks if a string contains both alphabets and numbers
+
 
 def two(x:str,y:str):
     if x in y:
@@ -38,9 +39,9 @@ def convert3(i:str):
 print(convert3('i love playing around with python data types'))
 
 def checking(g):
-    if g.isalnum():
+    if g.isalnum() == True:
         return True;
     else:
         return False;
 
-print(checking('*^abc12'))
+print(checking('abc12'))

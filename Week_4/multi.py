@@ -8,7 +8,6 @@ def multi():
         y = int(x)
         if y == z:
             print("very good!")
-            multi()
             break
         else:
             print("No, please try again.")

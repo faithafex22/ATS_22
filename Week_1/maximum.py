@@ -28,7 +28,7 @@ print("The largest value:", square[key2])    # 9
 #['Ajay', 'aman', 'Darshan', 'Hemkesh', 'Rishikesh', 'sandeep', 'Shwetabh', 'Virendra']
 #
 ## find largest item in the string
-#print(max("abcDEF")) 
+#print(max("")) 
 #
 ## find largest item in the list
 #print(max([2, 1, 4, 3])) 

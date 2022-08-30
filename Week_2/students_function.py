@@ -39,9 +39,9 @@ print(make_title("awwal", "adeleke"))
 #function to return all fullname in titlecase
 def titlecase():
     names_list = []
-    for i in range(len(people)):
-        firstname = people[i]["f_name"] 
-        lastname = people[i]["l_name"]
+    for i in people:
+        firstname = i["f_name"] 
+        lastname = i["l_name"]
         names_list.append(f"{firstname} {lastname}".title())
     return names_list
 print(titlecase())
@@ -62,9 +62,9 @@ print(countstudents())
 
 #function that remove a profile
 def removeprofile(name):
-    for i in range(len(people)):
-        if people[i]["f_name"] == name:
-            people.remove(people[i])
+    for i in people:
+        if i["f_name"] == name:
+            people.remove(i)
             break
     return people   
 pprint.pprint(removeprofile("Adebusola"))
@@ -81,9 +81,9 @@ print(getbirthmonth("Awwal"))
 #function to return list of initials
 def initials():
     mylist = []
-    for i in range(len(people)):
-            firstname = people[i]["f_name"]
-            lastname = people[i]["l_name"]
+    for i in people: 
+            firstname = i["f_name"]
+            lastname = i["l_name"]
             nameinitials = f"{firstname[0:1]} . {lastname[0:1]}"
             mylist.append(nameinitials)
     return mylist
@@ -100,8 +100,8 @@ print(calculate_BMI(name="Abraham"))
 #function that returns minimum age of the class
 def min_age():
     mini_age = people[0]["age"]
-    for i in range(len(people)):
-        current_age = people[i]["age"]
+    for i in people:
+        current_age = i["age"]
         if current_age < mini_age:
             mini_age = current_age
     return(f"Minimum age is {mini_age}")
@@ -110,8 +110,8 @@ print(min_age())
 #function that returns maximum age
 def max_age():
     maxi_age = people[0]["age"]
-    for i in range(len(people)):
-        current_age = people[i]["age"]
+    for i in people:
+        current_age = i["age"]
         if current_age > maxi_age:
             maxi_age = current_age
     return(f"Maximum age is {maxi_age}") 
@@ -120,8 +120,8 @@ print(max_age())
 #function that return the average of ages of students in clas
 def average():
         sum_ages = 0
-        for i in range(len(people)):
-            sum_ages = sum_ages + people[i]["age"]
+        for i in people:
+            sum_ages = sum_ages + i["age"]
             n = len(people)
             avearage = sum_ages/n
         return round (avearage) 
@@ -129,16 +129,16 @@ print(average())
 
 #function that calculates birth year
 def birth_year(firstname):
-    for i in range(len(people)):
-        if firstname == people[i]["f_name"]:
-            yearofbirth = date.today().year - people[i]["age"]
+    for i in people:
+        if firstname == i["f_name"]:
+            yearofbirth = date.today().year - i["age"]
     return f"The year that {firstname} was born is {yearofbirth}"
 print(birth_year(firstname="Esther"))
 
 #function to group students according to their birth months
-def get_one(profile):
+def get_one(i):
    month_dict = {1:"January", 2:"February", 3:"March", 4:"April", 5:"May", 6:"June", 7:"July", 8:"August", 9:"September", 10:"October", 11:"November", 12:"December" }
-   profile_month = profile["day_month"].split()[2]
+   profile_month = i["day_month"].split()[2]
    month_num = [k for k, v in month_dict.items() if v == profile_month]
    return month_num
 def group_profiles():
@@ -146,3 +146,4 @@ def group_profiles():
    pprint.pprint(people)
 
 group_profiles()
+

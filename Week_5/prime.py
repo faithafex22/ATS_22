@@ -1,3 +1,4 @@
+#finding prime numbers by using index
 y = []
 for num in range(2, 1000):
     for i in range(2, num):
@@ -16,9 +17,4 @@ for index, num in enumerate(y, start=2):
 
     
 
-##mylist = [ v for v in range(1, 1000)]
-
-##for k,v in enumerate(list):
-    ##for character in list:
-         
 

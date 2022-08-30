@@ -7,6 +7,9 @@ def prime(num):
         print("Prime")
     else:
         print("Not Prime")
+        
+        
+prime(23)
 
 
 

@@ -15,12 +15,12 @@ PIN = set_pin()
 
 
 def get_balance():
-    
+    global balance, PIN
     input_pin = (input("Enter your ussd pin here to check your balance: "))
     if input_pin == PIN:
-        print(f"your balance is  #{balance}")
+        print(f"your account balance is #{balance}")
         return balance
-    return("The pin entered is incorrect, ypu can reset your pin")
+    return("The pin entered is incorrect, you can reset your pin")
 acct_balance = get_balance()
 
 def transfer():
@@ -112,7 +112,7 @@ otp_generation = generate_otp()
 def user():
     global balance, PIN
     name = input("Welcome user, what is your name?: ")
-    ussd_dict = {
+    ussd_bank = {
     "*901#" : "Acess Bank",
     "*326#" : "Ecobank",
     "*770#" : "Fidelity Bank",
@@ -131,9 +131,9 @@ def user():
     "*966#": "Zenith Bank"
     }
     ussd_code = input(f" welcome {name.title()}, enter your bank ussd code: ")
-    if ussd_code in ussd_dict:
+    if ussd_code in ussd_bank:
         print(f"""
-            Welcome to {ussd_dict[ussd_code]}, {name.title()}.... 
+            Welcome to {ussd_bank[ussd_code]}, {name.title()}.... 
             before you proceed, you will be charged #6.80 for any transaction you make
                   """)
         option = input("if you agree to our term type \"1\", if not, type \"2\": ") 

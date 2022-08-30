@@ -62,9 +62,8 @@ for index, num in enumerate(y, start=2):
 
 #5.6 
 def bubblesort(oldlist):
-
     swapped = False
-    for i in range(len(oldlist)-1):
+    for i in range(0, len(oldlist)-1):
         for j in range(0, len(oldlist)-i-1):
             if oldlist[j] > oldlist[j+1]:
                 swapped = True

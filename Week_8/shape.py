@@ -10,7 +10,7 @@ class Shape:
         return self.name
 
     def get_no_of_sides(self):
-        return self.get_no_of_sides
+        return self.no_of_sides
 
     def get_length(self):
         return self.length
