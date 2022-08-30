@@ -1,4 +1,4 @@
-word,count,contains
+word,count,contains,linenum
 twinkle,2,both V  and C,[1]
 little,1,both V and C,[1]
 star,1,both V and C,[1]
