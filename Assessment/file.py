@@ -33,7 +33,7 @@ with open("C:/Users/FaithOdunayoAdeosun/Documents/ATS_22/Assessment/words.txt", 
                 linenum = f'{k} is in line {number}'
                 print(linenum)
 
-header = ['word', 'count', 'contains','linenumber']
+header = ['word', 'count', 'contains','linenum']
 data = [["twinkle", 2 , "both V  and C", [1]],
         ["little", 1, "both V and C", [1]],
         ["star", 1 , "both V and C", [1]],
